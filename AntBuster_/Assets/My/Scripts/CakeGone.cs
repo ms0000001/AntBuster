@@ -6,21 +6,14 @@ public class CakeGone : MonoBehaviour
 {
     int i = 0;
     Animator animator;
+    public static int cakeP = 8;
+    
     void Start()
-    {
+    {        
         animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        
-    }    
-    private void OnTriggerExit2D(Collider2D other) 
-    {
-        if(other.tag == "Ant"){
-            i++;
-            animator.SetInteger("Stolen", i);
-            
-        }
-    }    
+    }
 }
