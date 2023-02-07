@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cake_waifu2x_scale4x_0
+      name: 8
       rect:
         serializedVersion: 2
         x: 0
@@ -125,7 +125,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cake_waifu2x_scale4x_1
+      name: 7
       rect:
         serializedVersion: 2
         x: 240
@@ -146,7 +146,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cake_waifu2x_scale4x_2
+      name: 6
       rect:
         serializedVersion: 2
         x: 480
@@ -167,7 +167,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cake_waifu2x_scale4x_3
+      name: 5
       rect:
         serializedVersion: 2
         x: 720
@@ -188,7 +188,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cake_waifu2x_scale4x_4
+      name: 4
       rect:
         serializedVersion: 2
         x: 0
@@ -209,7 +209,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cake_waifu2x_scale4x_5
+      name: 3
       rect:
         serializedVersion: 2
         x: 240
@@ -230,7 +230,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cake_waifu2x_scale4x_6
+      name: 2
       rect:
         serializedVersion: 2
         x: 480
@@ -251,7 +251,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cake_waifu2x_scale4x_7
+      name: 1
       rect:
         serializedVersion: 2
         x: 720
@@ -272,7 +272,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,14 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cake_waifu2x_scale4x_5: 673113331
-      cake_waifu2x_scale4x_6: 1458801075
-      cake_waifu2x_scale4x_2: 1761237963
-      cake_waifu2x_scale4x_1: -3649503
-      cake_waifu2x_scale4x_7: -489988084
-      cake_waifu2x_scale4x_3: -1833218473
-      cake_waifu2x_scale4x_4: -1945928288
-      cake_waifu2x_scale4x_0: -1009496908
+      8: -1009496908
+      3: 673113331
+      6: 1761237963
+      2: 1458801075
+      5: -1833218473
+      4: -1945928288
+      1: -489988084
+      7: -3649503
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

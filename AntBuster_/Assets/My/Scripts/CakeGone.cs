@@ -1,19 +1,66 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CakeGone : MonoBehaviour
 {
-    int i = 0;
-    Animator animator;
-    public static int cakeP = 8;
+    public static int i = 0;
+    public Sprite sevenP;
+    public Sprite sixP;
+    public Sprite fiveP;
+    public Sprite fourP;
+    public Sprite threeP;
+    public Sprite twoP;
+    public Sprite oneP;
+    public Sprite zeroP;
+    Image image;
     
     void Start()
     {        
-        animator = GetComponent<Animator>();
+        image = GetComponent<Image>();
     }
 
     void Update()
     {
+        Debug.Log(i);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        i++;
+        if(other.tag == "Ant")
+        {
+            if(AntMove.cakeOn==true)
+            {
+                switch(i)
+                {
+                    case 1:
+                    image.sprite = sevenP;
+                    break;
+                    case 2:
+                    image.sprite = sixP;
+                    break;
+                    case 3:
+                    image.sprite = fiveP;
+                    break;
+                    case 4:
+                    image.sprite = fourP;
+                    break;
+                    case 5:
+                    image.sprite = threeP;
+                    break;
+                    case 6:
+                    image.sprite = twoP;
+                    break;
+                    case 7:
+                    image.sprite = oneP;
+                    break;
+                    case 8:
+                    image.sprite = zeroP;
+                    break;
+                }                
+            }
+        }             
     }
 }
