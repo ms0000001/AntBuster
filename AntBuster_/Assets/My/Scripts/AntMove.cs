@@ -4,13 +4,14 @@ using UnityEngine;
 public class AntMove : MonoBehaviour
 {
     public RectTransform cake;
+    private RectTransform antObj = default;
     public RectTransform home;
     public GameObject haveCake;
     public int speed;
     public bool isDead = false;
-    public static bool start = true;
-    public static bool end = false;
-    public static bool cakeOn = false;
+    bool start = true;
+    bool end = false;
+    bool cakeOn = false;
 
     float antMAXHP = 100;
     float currentHP = 100;
@@ -18,6 +19,7 @@ public class AntMove : MonoBehaviour
 
     void Start()
     {
+        antObj = gameObject.GetComponent<RectTransform>();
     }
 
     void Update()
@@ -35,28 +37,34 @@ public class AntMove : MonoBehaviour
         {
             if(start == true)
             {
+                string enemy = "Cake";
+                GameObject caketarget = GameObject.FindGameObjectWithTag(enemy);
                 //머리회전
-                Vector3 dir = cake.position - transform.position;
+                Vector3 dir = caketarget.transform.position - transform.position;
                 float angle = Mathf.Atan2(dir.y,dir.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(
                     angle-90, Vector3.forward);
 
                 //케이크로 이동
-                gameObject.transform.position = Vector3.MoveTowards(
-                    transform.position, cake.position, Time.deltaTime*speed);
+                antObj.anchoredPosition = Vector3.MoveTowards(
+                    antObj.anchoredPosition, cake.anchoredPosition,
+                     Time.deltaTime*speed*100);
                 Debug.Log("출발");
             }
             if(end == true)
             {
                 // 머리회전
-                Vector3 dir = home.position - transform.position;
+                string enemy = "Home";
+                GameObject hometarget = GameObject.FindGameObjectWithTag(enemy);
+                Vector3 dir = hometarget.transform.position - transform.position;
                 float angle = Mathf.Atan2(dir.y,dir.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(
                     angle-90, Vector3.forward);
 
                 // 집으로 이동
-                gameObject.transform.position = Vector3.MoveTowards(
-                    transform.position, home.position, Time.deltaTime*speed);
+                antObj.anchoredPosition = Vector3.MoveTowards(
+                    antObj.anchoredPosition, home.anchoredPosition,
+                     Time.deltaTime*speed*100);
                 Debug.Log("귀환");
             }
 
@@ -78,7 +86,7 @@ public class AntMove : MonoBehaviour
     void Die()
     {
         // hp가 0일 경우
-        if(currentHP == 0)
+        if(currentHP <= 0)
         {
             isDead = true;
         }
@@ -127,5 +135,10 @@ public class AntMove : MonoBehaviour
         }
 
         //총알과 접촉 시
+        if(other.tag == "Bullet")
+        {
+            Debug.Log("맞았다");
+            currentHP -=10;
+        }
     }
 }

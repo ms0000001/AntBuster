@@ -8,6 +8,9 @@ TagManager:
   - Cake
   - Home
   - Bullet
+  - Wall
+  - ShootingRange
+  - Ant1
   layers:
   - Default
   - TransparentFX

@@ -24,7 +24,7 @@ public class CakeGone : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(i);
+        //Debug.Log(i);
         HowManyCake();
     }    
     void HowManyCake()
